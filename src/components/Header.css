@@ -1,15 +1,19 @@
 header {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 16px 24px;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
+
+  & div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 24px;
+
+    max-width: 1140px;
+    margin: 0 auto;
+  }
 }
 
-header > a {
+div > a {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -19,7 +23,7 @@ header > a {
   font-weight: bold;
 }
 
-header nav ul {
+div nav ul {
   display: flex;
   gap: 8px;
   list-style: none;
@@ -27,7 +31,7 @@ header nav ul {
   padding: 0;
 }
 
-header nav a {
+div nav a {
   display: block;
   padding: 8px 14px;
   border-radius: 10px;
@@ -41,15 +45,15 @@ header nav a {
   }
 }
 
-header > input {
+div > input {
   display: none;
 }
 
-header search {
+div search {
   margin-left: auto;
 }
 
-header search form {
+div search form {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -59,7 +63,7 @@ header search form {
   border: 1px solid var(--border);
 }
 
-header search input {
+div search input {
   background: transparent;
   border: none;
   outline: none;
@@ -71,18 +75,18 @@ header search input {
   }
 }
 
-header search button {
+div search button {
   display: none;
 }
 
-header > div {
+div > div {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-header > div button,
-header > div a {
+div > div button,
+div > div a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,8 +99,8 @@ header > div a {
   cursor: pointer;
 }
 
-header > div button:first-child,
-header > div a {
+div > div button:first-child,
+div > div a {
   width: 38px;
 
   &:hover {
@@ -104,7 +108,7 @@ header > div a {
   }
 }
 
-header > div button:last-child {
+div > div button:last-child {
   padding: 0 18px;
   background: var(--accent);
   border: none;
