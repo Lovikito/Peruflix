@@ -1,9 +1,9 @@
+import { Header } from "./components/Header.jsx"
+
 function App() {
 
   return (
-    <header>
-      Aqui empieza todo
-    </header>
+    <Header/>
   )
 }
 

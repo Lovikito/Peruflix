@@ -1,0 +1,115 @@
+header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+header > a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  display: block;
+  padding: 8px 14px;
+  border-radius: 10px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+
+  &:hover {
+    color: var(--text);
+    background: var(--panel);
+  }
+}
+
+header > input {
+  display: none;
+}
+
+header search {
+  margin-left: auto;
+}
+
+header search form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+}
+
+header search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text);
+  width: 180px;
+
+  &::placeholder {
+    color: var(--subtle);
+  }
+}
+
+header search button {
+  display: none;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header > div button,
+header > div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header > div button:first-child,
+header > div a {
+  width: 38px;
+
+  &:hover {
+    background: var(--panel-2);
+  }
+}
+
+header > div button:last-child {
+  padding: 0 18px;
+  background: var(--accent);
+  border: none;
+  font-weight: bold;
+  &:hover {
+    background: var(--accent-dark);
+  }
+}
